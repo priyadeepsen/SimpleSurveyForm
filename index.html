@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please tell us about your experience.</p>
+  <section>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Personal Details:</legend>
+        <label id="name-label">Name:
+          <input id="name" type="text" placeholder="Enter your name" required />
+        </label>
+        <label id="email-label">Email:
+          <input id="email" type="email" placeholder="example@gmail.com" required />
+        </label>
+        <label id="number-label">Age:
+          <input type="number" id="number" min="13" max="120" placeholder="Enter your age" /></label>
+        <label for="dropdown">Choose an Option:</label>
+        <select id="dropdown">
+          <option>LinkedIn</option>
+          <option>Youtube</option>
+          <option>Google</option>
+          <option>Slack</option>
+          <option>Others</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Which one would you prefer?</legend>
+        <label><input name="job_type" type="radio" value="big-tech"/>Big-Tech</label>
+        <label><input name="job_type" type="radio" value="startups"/>Startups</label>
+      </fieldset>
+      <fieldset>
+        <legend>Which one would you prefer?</legend>
+        <label><input type="checkbox" value="kits" />Silver</label>
+        <label><input type="checkbox" value="kits" />Gold</label>
+        <label><input type="checkbox" value="kits" />Platinum</label>
+        <label><input type="checkbox" value="kits" />Titanium</label>
+        <label><input type="checkbox" value="kits" />Diamond</label>
+      </fieldset>
+      <br />
+      <div>
+        <label>Any Suggestions? <textarea></textarea></label>
+      </div>
+      <br />
+      <div>
+        <button id="submit" type="submit">SUBMIT</button>
+      </div>
+    </form>
+  </section>
+</body>
+
+</html>
